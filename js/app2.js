@@ -61,6 +61,9 @@ function newGame() {
             })
             //reset the guess list area
         $('#guessList').empty();
+        $('#count').text('0');
+        $('#userGuess, #guessButton').prop('disabled',false);
+        $('#feedback').html('Make your guess');
     }
 
 //differenceNumber - difference from guessedNumber and randomNumber
